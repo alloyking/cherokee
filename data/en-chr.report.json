@@ -1,0 +1,391 @@
+{
+  "input_file": "data/en-chr.csv",
+  "header": "COUNT \t 11396",
+  "header_declared_count": 11396,
+  "raw_rows_seen": 11379,
+  "parsed_two_column_rows": 11375,
+  "malformed_rows_total": 132,
+  "malformed_rows_unrepaired": 4,
+  "malformed_rows_repaired": 128,
+  "repaired_rows_accepted": 117,
+  "repaired_rows_rejected": 11,
+  "accepted_rows": 11031,
+  "rejected_rows": 344,
+  "preview_rows_written": 200,
+  "output_files": {
+    "report": "data/en-chr.report.json",
+    "cleaned_jsonl": "data/en-chr.cleaned.jsonl",
+    "strict_training_jsonl": "data/en-chr.strict-training.jsonl",
+    "strict_training_train_jsonl": "data/en-chr.strict-training.train.jsonl",
+    "strict_training_valid_jsonl": "data/en-chr.strict-training.valid.jsonl",
+    "strict_training_test_jsonl": "data/en-chr.strict-training.test.jsonl",
+    "everyday_training_jsonl": "data/en-chr.everyday-training.jsonl",
+    "everyday_training_train_jsonl": "data/en-chr.everyday-training.train.jsonl",
+    "everyday_training_valid_jsonl": "data/en-chr.everyday-training.valid.jsonl",
+    "everyday_training_test_jsonl": "data/en-chr.everyday-training.test.jsonl",
+    "instruction_jsonl": "data/en-chr.strict-training.instructions.jsonl",
+    "instruction_train_jsonl": "data/en-chr.strict-training.instructions.train.jsonl",
+    "instruction_valid_jsonl": "data/en-chr.strict-training.instructions.valid.jsonl",
+    "instruction_test_jsonl": "data/en-chr.strict-training.instructions.test.jsonl",
+    "everyday_instruction_jsonl": "data/en-chr.everyday-training.instructions.jsonl",
+    "everyday_instruction_train_jsonl": "data/en-chr.everyday-training.instructions.train.jsonl",
+    "everyday_instruction_valid_jsonl": "data/en-chr.everyday-training.instructions.valid.jsonl",
+    "everyday_instruction_test_jsonl": "data/en-chr.everyday-training.instructions.test.jsonl",
+    "cleaned_preview_jsonl": "data/en-chr.cleaned.preview.jsonl",
+    "bad_rows_csv": "data/en-chr.bad-rows.csv",
+    "repaired_rows_csv": "data/en-chr.repaired-rows.csv",
+    "domain_summary_json": "data/en-chr.domain-summary.json",
+    "buckets_dir": "data/en-chr.buckets"
+  },
+  "split_ratio": {
+    "train": 0.9,
+    "valid": 0.05,
+    "test": 0.05
+  },
+  "length_stats": {
+    "left_mean": 66.03,
+    "right_mean": 98.82,
+    "left_median": 62,
+    "right_median": 95
+  },
+  "reason_counts": {
+    "source_tag": 224,
+    "duplicate_exact": 43,
+    "low_cherokee_left": 29,
+    "scripture_reference": 21,
+    "too_long": 17,
+    "english_left": 16,
+    "identical_sides": 14,
+    "too_short": 12,
+    "malformed_csv": 4,
+    "digit_heavy": 3,
+    "low_english_right": 1
+  },
+  "source_tag_counts": {
+    "ᎤᏁᎳᏅᎯ": 15,
+    "ᏥᏌ": 11,
+    "is": 8,
+    "ᎦᎶᏁᏛ": 6,
+    "it": 6,
+    "ᎠᎴ": 5,
+    "are": 4,
+    "Beginning Cherokee": 4,
+    "Chamberlain's 1888 Cherokee Picture Book": 4,
+    "ᎠᏍᎦᏯ": 3,
+    "ᎯᎠ ᏂᎦᏪᏍᎨᎢ;": 2,
+    "ᏥᏌᏃ": 2,
+    "ᎾᏍᎩ ᏄᎵᏍᏔᏅᎩ": 2,
+    "ᏥᏌ ᎦᎶᏁᏛ": 2,
+    "ᏚᏳᎪᏛ ᎢᏯᏛᏁᏗ ᎨᏒ": 2,
+    "ᎤᏚᎵᏍᎬ": 2,
+    "ᎤᎾᏛᎪᏗᏱ": 2,
+    "ᎤᏁᎢᏍᏔᏅ": 2,
+    "ᏫᏥᎪᎥᎩ,": 2,
+    "ᎠᎨᏴ": 2,
+    "am": 2,
+    "art": 2,
+    "ᎠᎵᏍᏓᏴᎲᏍᎬ": 1,
+    "ᎥᏝ ᎤᏍᎦᏅᏨᎯ ᏱᎨᏎᏍᏗ,": 1,
+    "ᎨᏦᏎᎰᎢ,": 1
+  },
+  "domain_counts": {
+    "general_parallel": 10057,
+    "story_narrative": 912,
+    "news": 57,
+    "reference": 5
+  },
+  "strict_training_rows": 9419,
+  "everyday_training_rows": 3329,
+  "strict_split_counts": {
+    "train": 8470,
+    "valid": 470,
+    "test": 479
+  },
+  "everyday_split_counts": {
+    "train": 2981,
+    "valid": 183,
+    "test": 165
+  },
+  "instruction_rows": 18838,
+  "everyday_instruction_rows": 6658,
+  "instruction_split_counts": {
+    "train": 16940,
+    "valid": 940,
+    "test": 958
+  },
+  "everyday_instruction_split_counts": {
+    "train": 5962,
+    "valid": 366,
+    "test": 330
+  },
+  "strict_exclusion_counts": {
+    "named_entity_heavy": 1505,
+    "latin_heavy_left": 215,
+    "acronym_right": 61,
+    "domain_news": 57,
+    "digit_heavy_training": 25,
+    "headline_like": 24,
+    "domain_reference": 5
+  },
+  "everyday_exclusion_counts": {
+    "archaic_english": 3200,
+    "complex_punctuation": 3162,
+    "long_english": 2829,
+    "question_form": 826,
+    "domain_story_narrative": 696,
+    "quoted_speech": 258
+  },
+  "accepted_samples": [
+    {
+      "id": "en-chr-000002",
+      "source_line": 3,
+      "cherokee": "ᎠᏭ ᎤᏂᏴᏍᏗ, ᎣᎦᎳᎰᎹ.",
+      "english": "PARK HILL, Okla.",
+      "repair_applied": false,
+      "domain": "general_parallel",
+      "training_exclusion_reasons": [
+        "named_entity_heavy",
+        "acronym_right"
+      ],
+      "status": "accepted"
+    },
+    {
+      "id": "en-chr-000003",
+      "source_line": 4,
+      "cherokee": "ᏍᎪᎯ ᏧᏕᏘᏴᏓ ᏂᎨᏐ ᎩᎳ ᎢᏤᎢ ᏗᎦᏘᏱ ᎤᏂᎧᏁᎢ ᏣᎳᎩᎯ ᏧᎾᏓᎴᏅ ᎠᏰᎵ ᎣᏍᏓᏃ ᎠᎦᏔᎯ ᏄᏍᏗᏓᏅ ᎥᎿ ᎠᎴ ᏧᏟᎢᎩᏍᏓᏅᎯ ᏧᎸᏫᏍᏓᏁᎸᎢ ᎨᏒᎢ.",
+      "english": "After more than a decade, the Cherokee Heritage Center has a new curator; one who is familiar with the center after having worked at it before.",
+      "repair_applied": false,
+      "domain": "news",
+      "training_exclusion_reasons": [
+        "domain_news",
+        "named_entity_heavy"
+      ],
+      "status": "accepted"
+    },
+    {
+      "id": "en-chr-000005",
+      "source_line": 6,
+      "cherokee": "9ᏁᎢ ᎤᎴᏅᎮ ᏚᎸᏫᏍᏓᏁᎲᎢ ᎤᏑᎵᎪᏣ Mickel Yantz ᏗᎦᏘᏱ ᎨᏒ Sherwin Miller ᎤᏪᏘ ᎠᏍᏆᏂᎪᏛ Jewish Arts Tulsa ᏭᎴᏅᎮ ᏚᎩᏫᏍᏓᏁᎲᎢ.",
+      "english": "9 after former CHC Curator Mickel Yantz accepted a job with the Sherwin Miller Museum of Jewish Art in Tulsa.",
+      "repair_applied": false,
+      "domain": "news",
+      "training_exclusion_reasons": [
+        "domain_news",
+        "named_entity_heavy",
+        "latin_heavy_left",
+        "acronym_right"
+      ],
+      "status": "accepted"
+    },
+    {
+      "id": "en-chr-000006",
+      "source_line": 7,
+      "cherokee": "ᎤᏴᏢᎧᎸᎬ ᏍᎦᏚᎩ ᏩᎦᎸᎳᏗᏴ ᏧᎾᏕᎶᏆᏍᏗᏱ ᏧᏍᏆᏛ Chunestudy ᎣᎯᏍᏗ ᏗᏟᎶᏍᏙᏗ ᏧᎾᏕᎶᏆᏍᏗ.",
+      "english": "Chunestudy is a graduate of Northeastern State University with a bachelor’s degree in fine arts.",
+      "repair_applied": false,
+      "domain": "general_parallel",
+      "training_exclusion_reasons": [
+        "named_entity_heavy",
+        "latin_heavy_left"
+      ],
+      "status": "accepted"
+    },
+    {
+      "id": "en-chr-000007",
+      "source_line": 8,
+      "cherokee": "“ᏓᎳᏚ ᏳᏕᏘᏴᏓ ᏥᎨᏒ ᎤᎴᏅᎮ ᏚᎸᏫᏍᏓᏁᎲ (ᏣᎳᎩᎯ ᎠᏰᎵ) summer youth (ᏗᎨᏥᎾᏢᏗ ᎤᏙᏢᏒ) ᎠᎴ ᏁᎳᏚ ᏳᏕᏘᏴᏓ ᏥᎨᏒ ᎦᏓᎫᎦ ᏧᏃᏢᏗ ᏚᎸᏫᏍᏓᏁᎸᎢ,” ᎠᏗᏍᎬᎢ.",
+      "english": "“The Heritage Center has always held a big place in my heart. It’s where I worked at 16 on (Cherokee Nation) Summer Youth (Employment Program) and at 18 for the pottery division back when that was going on,” she said.",
+      "repair_applied": false,
+      "domain": "news",
+      "training_exclusion_reasons": [
+        "domain_news",
+        "named_entity_heavy"
+      ],
+      "status": "accepted"
+    }
+  ],
+  "rejected_samples": [
+    {
+      "id": "en-chr-000001",
+      "source_line": 2,
+      "cherokee": "Chunestudy feels at home as CHC curator - ᏣᎳᎩ",
+      "english": "Chunestudy feels at home as CHC curator",
+      "repair_applied": false,
+      "status": "rejected",
+      "reasons": [
+        "low_cherokee_left",
+        "english_left"
+      ]
+    },
+    {
+      "id": "en-chr-000004",
+      "source_line": 5,
+      "cherokee": "Callie Chunestudy, 34, ᏅᏓᏕᏆ.",
+      "english": "Callie Chunestudy, 34, took over the position on Nov.",
+      "repair_applied": false,
+      "status": "rejected",
+      "reasons": [
+        "low_cherokee_left"
+      ]
+    },
+    {
+      "id": "en-chr-000310",
+      "source_line": 311,
+      "cherokee": "ᎯᎠᏃ ᏄᎵᏍᏔᏅᎩ, ᎦᏅᎬ [ᎠᎵᏍᏓᏴᎲᏍᎬ] ᎦᎵᏦᏕ, ᎬᏂᏳᏉ ᎤᏂᏣᏛᎩ ᎠᏕᎸ ᎠᏂᎩᏏᏙᎯ ᎠᎴ ᎠᏂᏍᎦᎾ ᎤᏂᎷᏨ ᎤᎾᏂᏢᏅᎩ ᎠᏂᏅᏜᎥ ᏥᏌ ᎠᎴ ᎬᏩᏍᏓᏩᏗᏙᎯ.",
+      "english": "And it came to pass, as he sat at meat in the house, behold, many publicans and sinners came and sat down with Jesus and his disciples.",
+      "repair_applied": false,
+      "status": "rejected",
+      "reasons": [
+        "source_tag"
+      ]
+    },
+    {
+      "id": "en-chr-000314",
+      "source_line": 315,
+      "cherokee": "ᎿᏉᏃ ᏣᏂ ᎬᏩᏍᏓᏩᏗᏙᎯ [ᏥᏌ] ᎬᏩᎷᏤᎸᎩ, ᎯᎠ ᏂᎬᏩᏪᏎᎸᎩ; ᎦᏙᏃ ᎠᏴ ᎠᏂᏆᎵᏏᏃ ᏯᏃ ᎠᎹᏟ ᏦᏨᏍᎦ, ᏂᎯᏃ ᎨᏣᏍᏓᏩᏗᏙᎯ ᎠᎹᏟ ᎾᏅᏍᎬᎾ ᏥᎩ?",
+      "english": "Then come to him the disciples of John, saying, Why do we and the Pharisees fast oft, but thy disciples fast not?",
+      "repair_applied": false,
+      "status": "rejected",
+      "reasons": [
+        "source_tag"
+      ]
+    },
+    {
+      "id": "en-chr-000560",
+      "source_line": 561,
+      "cherokee": "ᏂᎦᎸᏉᏗᏍᎬᎾᏃ ᎢᎨᏎᏍᏗ ᎤᏙᏓ, ᎠᎴ ᎤᏥ, [ᎥᏝ ᎤᏍᎦᏅᏨᎯ ᏱᎨᏎᏍᏗ,] ᎢᏣᏗᏍᎪᎢ. ᎾᏍᎩ ᎯᎠ ᎡᏘ ᎠᏁᎯ ᎤᏂᏃᎮᎸᎯ ᎢᏨᏔᏅ ᎠᏎᏉ ᏂᏨᏁᎸ ᎤᏁᎳᏅᎯ ᎤᏁᏨᎯ.",
+      "english": "he shall not honor his father. And ye have made void the word of God because of your tradition.",
+      "repair_applied": false,
+      "status": "rejected",
+      "reasons": [
+        "source_tag"
+      ]
+    }
+  ],
+  "malformed_samples": [
+    {
+      "line_number": 3899,
+      "status": "malformed_unrepaired",
+      "reasons": [
+        "malformed_csv"
+      ],
+      "raw_columns": [
+        "ᎬᏂᏛ ᏕᎦᏅᏅ ᏕᏍᎩᎾᏄᎪᏫᏎᎸ, ᎠᎵᎮᎵᏍᏗ ᎨᏒ ᏓᏍᎩᎧᎵᎢᏍᏔᏂ ᏣᎧᏛ ᏛᏔᏂ.\", Thou madest known unto me the ways of life; Thou shalt make me full of gladness with thy countenance.\""
+      ]
+    },
+    {
+      "line_number": 4087,
+      "status": "malformed_unrepaired",
+      "reasons": [
+        "malformed_csv"
+      ],
+      "raw_columns": [
+        "ᏝᏍᎪ ᎠᏉᏰᏂ ᎠᏋᏔᏅᎯ ᎠᏉᏢᏅᎯ ᏱᎩ ᎯᎠ ᏂᎦᏛ ᏥᏄᏍᏗᏓᎾ?\", Did not my hand make all these things?\""
+      ]
+    },
+    {
+      "line_number": 4130,
+      "status": "malformed_unrepaired",
+      "reasons": [
+        "malformed_csv"
+      ],
+      "raw_columns": [
+        "ᎤᏲ ᏄᏛᎿᏕᎬᎢ ᎠᏥᎩᎡᎸᎩ ᎤᏤᎵ ᎨᏒ ᏚᏳᎪᏛᎢ; ᎠᎴ ᎦᎪ ᏙᏓᎧᏃᎮᎵ ᏴᏫ ᎾᎯᏳ ᏤᎮ ᎠᏁᎯ? ᎬᏅᏰᏃ ᎤᏂᎩᏒᎩ ᎡᎶᎯ.\", In his humiliation his judgment was taken away: His generation who shall declare? For his life is taken from the earth.\""
+      ]
+    },
+    {
+      "line_number": 8411,
+      "status": "malformed_unrepaired",
+      "reasons": [
+        "malformed_csv"
+      ],
+      "raw_columns": [
+        "ᎨᏍᏗ ᎠᏰᎵ ᏯᎾᏓᏬᎠ ᎦᏣᏄᎵ ᎨᏴᎢ ᎠᎹ, ᎭᎾᎾ ᎠᎾᏓᏉᏍᎪ ᎠᏁᏉᎯᎨ ᎠᏂᏣᏗ, ᎭᏂ ᏥᎾᏓᏬ ᏃᏉ!\", They do not swim in the middle where the fast water flows. That is where the big fish swim and that is where we are now!\"\""
+      ]
+    }
+  ],
+  "repaired_samples": [
+    {
+      "line_number": 3224,
+      "status": "accepted_after_repair",
+      "reasons": [],
+      "repaired_cherokee": "ᎯᎠ ᏂᎬᏅ ᎪᏪᎳ ᎠᎾᏙᎴᎰᏍᎩᏱ; ᎠᎴ ᏂᎦᏛ ᎤᏁᎳᏅᎯ ᏧᏪᏲᏅᎯ ᎨᏎᏍᏗ.\" ᎾᏍᎩ ᎢᏳᏍᏗ ᏂᎦᏛ ᎤᎾᏛᎦᏁᎸᎯ ᎠᎴ ᎤᎾᏕᎶᏆᎡᎸᎯ ᎠᎦᏴᎵᎨᎢ, ᎬᎩᎷᏤᎰᎢ.\"",
+      "repaired_english": "It is written in the prophets, And they shall all be taught of God. Every one that hath heard from the Father, and hath learned, cometh unto me.",
+      "domain": "general_parallel",
+      "training_exclusion_reasons": [
+        "named_entity_heavy"
+      ],
+      "raw_columns": [
+        "ᎯᎠ ᏂᎬᏅ ᎪᏪᎳ ᎠᎾᏙᎴᎰᏍᎩᏱ; ᎠᎴ ᏂᎦᏛ ᎤᏁᎳᏅᎯ ᏧᏪᏲᏅᎯ ᎨᏎᏍᏗ.\" ᎾᏍᎩ ᎢᏳᏍᏗ ᏂᎦᏛ ᎤᎾᏛᎦᏁᎸᎯ ᎠᎴ ᎤᎾᏕᎶᏆᎡᎸᎯ ᎠᎦᏴᎵᎨᎢ",
+        "ᎬᎩᎷᏤᎰᎢ.\"",
+        "It is written in the prophets, And they shall all be taught of God. Every one that hath heard from the Father, and hath learned, cometh unto me."
+      ]
+    },
+    {
+      "line_number": 3517,
+      "status": "accepted_after_repair",
+      "reasons": [],
+      "repaired_cherokee": "ᏞᏍᏗ ᏱᏍᎦᎢᎮᏍᏗ ᏂᎯ ᏌᏯᏂ ᎤᏪᏥ, ᎬᏂᏳᏉ ᎤᎬᏫᏳᎯ ᏣᏤᎵᎦ ᏓᏯᎢ, ᎠᎩᎾ ᏐᏈᎵ-ᏗᎦᎵᎠᏅᎯᏛ ᎤᏪᏥ ᎤᎩᎸᏗ.\"\"",
+      "repaired_english": "Fear not, daughter of Zion: behold, thy King cometh, sitting on an ass’s colt.",
+      "domain": "general_parallel",
+      "training_exclusion_reasons": [],
+      "raw_columns": [
+        "ᏞᏍᏗ ᏱᏍᎦᎢᎮᏍᏗ ᏂᎯ ᏌᏯᏂ ᎤᏪᏥ",
+        "ᎬᏂᏳᏉ ᎤᎬᏫᏳᎯ ᏣᏤᎵᎦ ᏓᏯᎢ",
+        "ᎠᎩᎾ ᏐᏈᎵ-ᏗᎦᎵᎠᏅᎯᏛ ᎤᏪᏥ ᎤᎩᎸᏗ.\"\"",
+        "Fear not, daughter of Zion: behold, thy King cometh, sitting on an ass’s colt."
+      ]
+    },
+    {
+      "line_number": 3540,
+      "status": "accepted_after_repair",
+      "reasons": [],
+      "repaired_cherokee": "ᎾᏍᎩᏃ ᎤᏙᎯᏳᏅᎩ ᎤᏁᏨ ᎢᏌᏯ ᎠᏙᎴᎰᏍᎩ, ᎯᎠ ᏥᏄᏪᏎᎢ; ᏣᎬᏫᏳᎰ, ᎦᎪ ᎤᏬᎯᏳᏅ ᎣᎩᏃᎮᎸᎢ? ᎠᎴ ᎦᎪ ᎠᏥᎾᏄᎪᏫᏎᎸ ᎤᎬᏫᏳᎯ ᎧᏃᎨᏂ?\"\"",
+      "repaired_english": "that the word of Isaiah the prophet might be fulfilled, which he spake, Lord, who hath believed our report? And to whom hath the arm of the Lord been revealed?",
+      "domain": "general_parallel",
+      "training_exclusion_reasons": [
+        "named_entity_heavy"
+      ],
+      "raw_columns": [
+        "ᎾᏍᎩᏃ ᎤᏙᎯᏳᏅᎩ ᎤᏁᏨ ᎢᏌᏯ ᎠᏙᎴᎰᏍᎩ, ᎯᎠ ᏥᏄᏪᏎᎢ; ᏣᎬᏫᏳᎰ",
+        "ᎦᎪ ᎤᏬᎯᏳᏅ ᎣᎩᏃᎮᎸᎢ? ᎠᎴ ᎦᎪ ᎠᏥᎾᏄᎪᏫᏎᎸ ᎤᎬᏫᏳᎯ ᎧᏃᎨᏂ?\"\"",
+        "that the word of Isaiah the prophet might be fulfilled, which he spake, Lord, who hath believed our report? And to whom hath the arm of the Lord been revealed?"
+      ]
+    },
+    {
+      "line_number": 3542,
+      "status": "accepted_after_repair",
+      "reasons": [],
+      "repaired_cherokee": "ᏚᏍᏚᏁᎸ ᏗᏂᎦᏙᎵ, ᎠᎴ ᏚᏍᏓᏱᏕᎸ ᏧᏂᎾᏫ; ᏗᎬᏩᏂᎪᏩᏛᏙᏗ ᏂᎨᏒᎾ ᏗᏂᎦᏙᎵ, ᎠᎴ ᎬᏩᏃᎵᏍᏙᏗ ᏂᎨᏒᎾ ᎤᏂᎾᏫ, ᎠᎴ ᎾᏍᎩ ᏗᎬᏩᎾᏓᏁᏟᏴᎡᏗ ᏂᎨᏒᎾ, ᎠᎴ ᏗᎦᎦᏥᏅᏬᏗ ᏂᎨᏒᎾ.\"\"",
+      "repaired_english": "He hath blinded their eyes, and he hardened their heart; Lest they should see with their eyes, and perceive with their heart, And should turn, And I should heal them.",
+      "domain": "general_parallel",
+      "training_exclusion_reasons": [
+        "named_entity_heavy"
+      ],
+      "raw_columns": [
+        "ᏚᏍᏚᏁᎸ ᏗᏂᎦᏙᎵ",
+        "ᎠᎴ ᏚᏍᏓᏱᏕᎸ ᏧᏂᎾᏫ; ᏗᎬᏩᏂᎪᏩᏛᏙᏗ ᏂᎨᏒᎾ ᏗᏂᎦᏙᎵ",
+        "ᎠᎴ ᎬᏩᏃᎵᏍᏙᏗ ᏂᎨᏒᎾ ᎤᏂᎾᏫ",
+        "ᎠᎴ ᎾᏍᎩ ᏗᎬᏩᎾᏓᏁᏟᏴᎡᏗ ᏂᎨᏒᎾ",
+        "ᎠᎴ ᏗᎦᎦᏥᏅᏬᏗ ᏂᎨᏒᎾ.\"\"",
+        "He hath blinded their eyes, and he hardened their heart; Lest they should see with their eyes, and perceive with their heart, And should turn, And I should heal them."
+      ]
+    },
+    {
+      "line_number": 3585,
+      "status": "accepted_after_repair",
+      "reasons": [],
+      "repaired_cherokee": "ᏗᏥᏲᎵ, ᎠᏏ ᏞᎦ ᎢᏨᏰᎳᏗᏙᎭ; ᏍᎩᏲᎮᏍᏗ; ᎠᎴ ᎾᏍᎩᏯ ᎠᏂᏧᏏ ᏥᏂᎦᏥᏪᏎᎸᎩ, ᏫᏥᎦᏛ ᎥᏝ ᏫᏴᎨᏥᎶᎯ, ᏥᎦᏥᏲᏎᎸᎩ, ᎾᏍᎩᏯ ᎾᏍᏉ ᎿᏉ ᏂᎯ ᏂᏨᏪᏎᎭ.",
+      "repaired_english": "Little children, yet a little while I am with you. Ye shall seek me: and as I said unto the Jews, Whither I go, ye cannot come; so now I say unto you.",
+      "domain": "general_parallel",
+      "training_exclusion_reasons": [
+        "named_entity_heavy"
+      ],
+      "raw_columns": [
+        "ᏗᏥᏲᎵ, ᎠᏏ ᏞᎦ ᎢᏨᏰᎳᏗᏙᎭ; ᏍᎩᏲᎮᏍᏗ; ᎠᎴ ᎾᏍᎩᏯ ᎠᏂᏧᏏ ᏥᏂᎦᏥᏪᏎᎸᎩ, ᏫᏥᎦᏛ ᎥᏝ ᏫᏴᎨᏥᎶᎯ",
+        " ᏥᎦᏥᏲᏎᎸᎩ, ᎾᏍᎩᏯ ᎾᏍᏉ ᎿᏉ ᏂᎯ ᏂᏨᏪᏎᎭ.",
+        "Little children, yet a little while I am with you. Ye shall seek me: and as I said unto the Jews, Whither I go, ye cannot come; so now I say unto you."
+      ]
+    }
+  ]
+}

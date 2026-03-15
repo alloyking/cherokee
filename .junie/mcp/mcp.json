@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/Users/timshultis/Library/Application Support/Herd/bin/php84",
+            "args": [
+                "/Users/timshultis/Sites/cherokee/cherokee/artisan",
+                "boost:mcp"
+            ]
+        },
+        "herd": {
+            "command": "/Users/timshultis/Library/Application Support/Herd/bin/php84",
+            "args": [
+                "/Applications/Herd.app/Contents/Resources/herd-mcp.phar"
+            ],
+            "env": {
+                "SITE_PATH": "/Users/timshultis/Sites/cherokee/cherokee"
+            }
+        }
+    }
+}

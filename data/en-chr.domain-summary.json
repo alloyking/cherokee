@@ -1,0 +1,215 @@
+{
+  "bucket_counts": {
+    "general_parallel": 10057,
+    "story_narrative": 912,
+    "news": 57,
+    "reference": 5
+  },
+  "strict_training_rows": 9419,
+  "strict_training_ratio": 0.8539,
+  "everyday_training_rows": 3329,
+  "everyday_training_ratio": 0.3534,
+  "strict_split_counts": {
+    "train": 8470,
+    "valid": 470,
+    "test": 479
+  },
+  "everyday_split_counts": {
+    "train": 2981,
+    "valid": 183,
+    "test": 165
+  },
+  "instruction_rows": 18838,
+  "everyday_instruction_rows": 6658,
+  "instruction_split_counts": {
+    "train": 16940,
+    "valid": 940,
+    "test": 958
+  },
+  "everyday_instruction_split_counts": {
+    "train": 5962,
+    "valid": 366,
+    "test": 330
+  },
+  "bucket_files": {
+    "general_parallel": "en-chr.buckets/general_parallel.jsonl",
+    "story_narrative": "en-chr.buckets/story_narrative.jsonl",
+    "news": "en-chr.buckets/news.jsonl",
+    "reference": "en-chr.buckets/reference.jsonl",
+    "scripture": "en-chr.buckets/scripture.jsonl"
+  },
+  "strict_exclusion_counts": {
+    "named_entity_heavy": 1505,
+    "latin_heavy_left": 215,
+    "acronym_right": 61,
+    "domain_news": 57,
+    "digit_heavy_training": 25,
+    "headline_like": 24,
+    "domain_reference": 5
+  },
+  "everyday_exclusion_counts": {
+    "archaic_english": 3200,
+    "complex_punctuation": 3162,
+    "long_english": 2829,
+    "question_form": 826,
+    "domain_story_narrative": 696,
+    "quoted_speech": 258
+  },
+  "samples": {
+    "general_parallel": [
+      {
+        "id": "en-chr-000002",
+        "source_line": 3,
+        "cherokee": "ᎠᏭ ᎤᏂᏴᏍᏗ, ᎣᎦᎳᎰᎹ.",
+        "english": "PARK HILL, Okla.",
+        "repair_applied": false,
+        "domain": "general_parallel",
+        "training_exclusion_reasons": [
+          "named_entity_heavy",
+          "acronym_right"
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "en-chr-000006",
+        "source_line": 7,
+        "cherokee": "ᎤᏴᏢᎧᎸᎬ ᏍᎦᏚᎩ ᏩᎦᎸᎳᏗᏴ ᏧᎾᏕᎶᏆᏍᏗᏱ ᏧᏍᏆᏛ Chunestudy ᎣᎯᏍᏗ ᏗᏟᎶᏍᏙᏗ ᏧᎾᏕᎶᏆᏍᏗ.",
+        "english": "Chunestudy is a graduate of Northeastern State University with a bachelor’s degree in fine arts.",
+        "repair_applied": false,
+        "domain": "general_parallel",
+        "training_exclusion_reasons": [
+          "named_entity_heavy",
+          "latin_heavy_left"
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "en-chr-000014",
+        "source_line": 15,
+        "cherokee": "ᏂᎬᏯᎢᏎᏍᏗ, ᎠᎭᏂ Heritage Center, ᎠᎴ ᎾᏍᎩ ᎤᎾᏓᏠᏒᎢ ᏧᎾᏟᎶᏍᏔᎾᎾᎢ ᎬᏂᎨᏒᎢ ᏄᏍᏕᏍᏗ ᏱᎪᎯᏓ ᎠᏍᏆᎵᏍᎨᏍᏗ Trail of Tears Art Show.”",
+        "english": "So it will run concurrent, here at the Heritage Center, and the winners’ art will be up for the duration of the Trail of Tears Art Show.",
+        "repair_applied": false,
+        "domain": "general_parallel",
+        "training_exclusion_reasons": [
+          "named_entity_heavy",
+          "latin_heavy_left"
+        ],
+        "status": "accepted"
+      }
+    ],
+    "story_narrative": [
+      {
+        "id": "en-chr-000012",
+        "source_line": 13,
+        "cherokee": "“ᎩᎳ ᎢᎬᏱ ᎨᏒ ᏣᎳᎩ ᏧᎾᏟᎶᏍᏔᏅ ᎤᏂᎾᏗᏅᏗ ᏙᎦᎵᎪᏎᏍᏗ ᏧᎾᏓᎴᏅᏓ ᎠᏰᎵ ᎠᏍᏆᎵᏍᎨᏍᏗ ᎠᎾᏛᏍᎩ ᏧᎾᏟᎶᏍᏔᏅ ᎠᎾᏓᎪᏅᏗᏍᎬ, ᎣᏍᏓᏃ ᎠᎩᏰᎸᏐᎢ ᏅᏍᎩ ᏥᏂᎦᎵᏍᏗᏌᎭ,” ᎠᏗᏍᎬᎢ.",
+        "english": "“It will be the first time I’m completely in charge of an art show and competition, so I’m very excited about that,” she said.",
+        "repair_applied": false,
+        "domain": "story_narrative",
+        "training_exclusion_reasons": [],
+        "status": "accepted"
+      },
+      {
+        "id": "en-chr-000016",
+        "source_line": 17,
+        "cherokee": "“ᏗᏟᎶᏍᏔᏅᏅᏃ ᎢᎦᏃ ᎣᏍᏓ ᎾᏍᎩᏃ ᏂᏗᎦᎵᏍᏙᏗᎭ ᎾᏂᎥᏃᏍ ᏯᏂᎪᏩᏔ ᏄᏬᏚᏒᎢ.",
+        "english": "“Art is a great way to do that because everyone can find common ground in beauty.",
+        "repair_applied": false,
+        "domain": "story_narrative",
+        "training_exclusion_reasons": [],
+        "status": "accepted"
+      },
+      {
+        "id": "en-chr-000018",
+        "source_line": 19,
+        "cherokee": "“ᎾᏍᎩᏃ ᎤᏂᏔ ᏧᎶᏌ ᎣᏍᏓ ᏗᎾᏟᎶᏍᏔᏅᎲᏍᎩ ᎠᎴᎪᏟᎬᎢ ᎠᏂᏣᎳᎩ ᏧᎾᏛᏁᎸᏍᏔᏅᎢ ᎠᎴ ᏗᏍᎦᏚᎩ ᎠᎴ ᎾᏍᎩ ᏄᏍᏛᎢ ᏕᎤᎲᎢ,” ᎠᏗᏍᎬᎢ Tehee.",
+        "english": "“She has a background in fine arts yet brings a deep understanding of Cherokee culture and communities with her to the position,” Tehee said.",
+        "repair_applied": false,
+        "domain": "story_narrative",
+        "training_exclusion_reasons": [],
+        "status": "accepted"
+      }
+    ],
+    "news": [
+      {
+        "id": "en-chr-000003",
+        "source_line": 4,
+        "cherokee": "ᏍᎪᎯ ᏧᏕᏘᏴᏓ ᏂᎨᏐ ᎩᎳ ᎢᏤᎢ ᏗᎦᏘᏱ ᎤᏂᎧᏁᎢ ᏣᎳᎩᎯ ᏧᎾᏓᎴᏅ ᎠᏰᎵ ᎣᏍᏓᏃ ᎠᎦᏔᎯ ᏄᏍᏗᏓᏅ ᎥᎿ ᎠᎴ ᏧᏟᎢᎩᏍᏓᏅᎯ ᏧᎸᏫᏍᏓᏁᎸᎢ ᎨᏒᎢ.",
+        "english": "After more than a decade, the Cherokee Heritage Center has a new curator; one who is familiar with the center after having worked at it before.",
+        "repair_applied": false,
+        "domain": "news",
+        "training_exclusion_reasons": [
+          "domain_news",
+          "named_entity_heavy"
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "en-chr-000005",
+        "source_line": 6,
+        "cherokee": "9ᏁᎢ ᎤᎴᏅᎮ ᏚᎸᏫᏍᏓᏁᎲᎢ ᎤᏑᎵᎪᏣ Mickel Yantz ᏗᎦᏘᏱ ᎨᏒ Sherwin Miller ᎤᏪᏘ ᎠᏍᏆᏂᎪᏛ Jewish Arts Tulsa ᏭᎴᏅᎮ ᏚᎩᏫᏍᏓᏁᎲᎢ.",
+        "english": "9 after former CHC Curator Mickel Yantz accepted a job with the Sherwin Miller Museum of Jewish Art in Tulsa.",
+        "repair_applied": false,
+        "domain": "news",
+        "training_exclusion_reasons": [
+          "domain_news",
+          "named_entity_heavy",
+          "latin_heavy_left",
+          "acronym_right"
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "en-chr-000007",
+        "source_line": 8,
+        "cherokee": "“ᏓᎳᏚ ᏳᏕᏘᏴᏓ ᏥᎨᏒ ᎤᎴᏅᎮ ᏚᎸᏫᏍᏓᏁᎲ (ᏣᎳᎩᎯ ᎠᏰᎵ) summer youth (ᏗᎨᏥᎾᏢᏗ ᎤᏙᏢᏒ) ᎠᎴ ᏁᎳᏚ ᏳᏕᏘᏴᏓ ᏥᎨᏒ ᎦᏓᎫᎦ ᏧᏃᏢᏗ ᏚᎸᏫᏍᏓᏁᎸᎢ,” ᎠᏗᏍᎬᎢ.",
+        "english": "“The Heritage Center has always held a big place in my heart. It’s where I worked at 16 on (Cherokee Nation) Summer Youth (Employment Program) and at 18 for the pottery division back when that was going on,” she said.",
+        "repair_applied": false,
+        "domain": "news",
+        "training_exclusion_reasons": [
+          "domain_news",
+          "named_entity_heavy"
+        ],
+        "status": "accepted"
+      }
+    ],
+    "reference": [
+      {
+        "id": "en-chr-008041",
+        "source_line": 8045,
+        "cherokee": "ᎠᎦᏍᎦᏂ ᎢᏗᏢ, ᎠᎾᏓᏩᏛᎯᏙ ᏗᏂᏴᎲᎰ ᎠᏐᏴ, ᎾᎿ ᎢᏤ ᎤᏅᏏᏴ ᏗᏂᏲᏟ ᎤᏁᏓᏍᏗ ᏧᎾᏟᎶᏍᏔᏅᎲᏍᏗ ᎠᎾᏕᎶᏆᏍᎪ ᎾᏍᎩ ᏏᏉᏲ ᏚᏬᏢᏅ ᏣᎳᎩ ᏗᎪᎵᏱᏙᏗ.",
+        "english": "To the left, as visitors enter the enclosure, is a new corner for children with activities to help them learn about the Cherokee syllabary and Sequoyah.",
+        "repair_applied": false,
+        "domain": "reference",
+        "training_exclusion_reasons": [
+          "domain_reference"
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "en-chr-008043",
+        "source_line": 8047,
+        "cherokee": "ᎾᎿ ᎬᏩᎾᎵᏏᎾᎲᏍᏙᏗ ᏧᏃᏪᎶᏗᎢ ᏣᎳᎩᎭᎢ, ᎠᎴ ᎾᏍᏊ ᎡᎵᏊ ᎬᏩᎾᏓᏅᏖᏗ ᎾᎿ ᏣᎳᎩ ᎬᏩᏂᏃᎮᏢᏓ ᎾᏍᎩ ᏗᎬᏩᎾᏙᏗ ᎦᎾᏢᎢ ᎠᎴ ᎢᎾᎨ ᎡᏁᎢ ᏗᏟᎶᏍᏔᏅ ᏚᏂᎾᎢ ᏗᎬᏩᎾᏙᏗ ᎾᏍᎩ ᏣᎳᎩ ᎧᏃᎮᏢᏅ ᎤᏂᏃᎮᏗᎢ ᏓᏅᏗᏍᎬ ᎯᎠ ᎤᏂᎾᎥᎢ ᎬᏩᎾᏕᎶᏆᏍᏗ ᏏᏉᏲ ᎤᎴᏂᏙᎸ ᎧᏃᎮᏢᏗ ᏓᏅᏗᏍᎬ ᎯᎠ ᏗᎪᏪᎵ ᎾᏍᎩ ᎩᎶ ᏧᏬᏢᏃᎯ ᎯᎠ ᏗᎪᏪᎵ ᏗᏟᎶᏍᏔᏅᎲᏍᎩ,” ᎠᏗᏍᎬᎢ Owens.",
+        "english": "So they can actually practice the Cherokee syllabary, they can put themselves in the perspective of a Cherokee storyteller with puppet animals and they can learn about the life of Sequoyah through a comic book from one of our Cherokee artists,” Owens said.",
+        "repair_applied": false,
+        "domain": "reference",
+        "training_exclusion_reasons": [
+          "domain_reference",
+          "named_entity_heavy"
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "en-chr-008055",
+        "source_line": 8059,
+        "cherokee": "ᎤᎴᏅᎲ ᎤᎦᏛᏂᏙᎲ ᎠᏁᎸᏗᏍᎬ ᎯᎠ ᏗᎪᏪᎶᏙᏗ ᎾᎿ ᏣᎳᎩ ᎦᏬᏂᎯᏍᏗ ᎠᎴ ᏚᏍᏆᏛ ᎾᎿ 1820 ᎢᎸᏢ ᎠᏟᎢᎵᏒ.",
+        "english": "He began experimenting with a syllabary for the Cherokee language and completed in the 1820s.",
+        "repair_applied": false,
+        "domain": "reference",
+        "training_exclusion_reasons": [
+          "domain_reference"
+        ],
+        "status": "accepted"
+      }
+    ]
+  }
+}
