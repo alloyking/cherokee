@@ -26,8 +26,8 @@ Laravel 12 app for a Cherokee vocabulary list (with pronunciation and English gl
 
 | Shape    | Purpose                          | Canonical source                    | DB table           |
 |----------|----------------------------------|-------------------------------------|--------------------|
-| **Words**   | Single lexical items, lookup      | `storage/app/private/cherokee/words.seed.json`   | `cherokee_words`   |
-| **Phrases** | Short fixed expressions           | `storage/app/private/cherokee/phrases.seed.json` | `cherokee_phrases` |
+| **Words**   | Single lexical items, lookup      | `data/cherokee/words.seed.json`   | `cherokee_words`   |
+| **Phrases** | Short fixed expressions           | `data/cherokee/phrases.seed.json` | `cherokee_phrases` |
 | **Corpus**  | Sentence pairs for translation    | `data/en-chr.csv` (raw)             | none (files only)   |
 
 - **Words** and **phrases** are seeded into the DB; the app displays/edits words. Phrases are in DB but not yet surfaced in the UI.
@@ -39,10 +39,10 @@ Laravel 12 app for a Cherokee vocabulary list (with pronunciation and English gl
 
 ### Lexicon (words & phrases)
 
-- `storage/app/private/cherokee/words.seed.json` — canonical word list (~108 entries); add new vocabulary here.
-- `storage/app/private/cherokee/phrases.seed.json` — phrase list (~12 entries).
-- `storage/app/private/cherokee/words.schema.json` — JSON schema for word entries.
-- `storage/app/private/cherokee/phrases.schema.json` — JSON schema for phrase entries.
+- `data/cherokee/words.seed.json` — canonical word list (~108 entries); add new vocabulary here.
+- `data/cherokee/phrases.seed.json` — phrase list (~12 entries).
+- `data/cherokee/words.schema.json` — JSON schema for word entries.
+- `data/cherokee/phrases.schema.json` — JSON schema for phrase entries.
 
 ### Corpus pipeline
 
@@ -72,7 +72,7 @@ Laravel 12 app for a Cherokee vocabulary list (with pronunciation and English gl
 
 ## Database conventions
 
-- **Words:** `seed_id` is unique and comes from the `id` field in `words.seed.json`. Upserts key on `seed_id`. `alternates` is JSON; seeder stores it as a JSON string for SQLite compatibility.
+- **Words:** `seed_id` is unique and comes from the `id` field in `data/cherokee/words.seed.json`. Upserts key on `seed_id`. `alternates` is JSON; seeder stores it as a JSON string for SQLite compatibility.
 - **User edits:** Any save from the Livewire words page sets `is_user_modified = true` for that row. The seeder **never overwrites** rows with `is_user_modified = true`.
 - **Reseed after changing seed JSON:** `php artisan db:seed --class=CherokeeLexiconSeeder` (or `php artisan db:seed`). New/changed seed entries are upserted; user-modified rows are left as-is.
 
@@ -114,7 +114,7 @@ All generated filenames and semantics are documented in `data/README.md`. Do not
 
 ## Provenance and sources
 
-- **Words:** Entries reference a `source` key (e.g. `ced_first500`, `shiyo_months`). A `sources` object in `words.seed.json` maps keys to name, kind, citation, url. `confidence` and `notes` are optional.
+- **Words:** Entries reference a `source` key (e.g. `ced_first500`, `shiyo_months`). A `sources` object in `data/cherokee/words.seed.json` maps keys to name, kind, citation, url. `confidence` and `notes` are optional.
 - **Phrases:** Same idea; sources like `shiyo`, `ced_dont_cry`.
 - **Corpus:** Raw CSV is external; pipeline does not add provenance beyond domain labels.
 
@@ -122,11 +122,11 @@ All generated filenames and semantics are documented in `data/README.md`. Do not
 
 ## Suggested next steps (for an AI or human)
 
-1. **Expand words:** Add more entries to `words.seed.json` (e.g. from cherokeedictionary.net First 500 or other vetted sources), then reseed.
+1. **Expand words:** Add more entries to `data/cherokee/words.seed.json` (e.g. from cherokeedictionary.net First 500 or other vetted sources), then reseed.
 2. **Phrases UI:** Add a Livewire page (or section) for phrases similar to `/words`.
 3. **IPA:** Populate `ipa` in word entries where desired; schema already supports it.
 4. **Training:** Use `data/en-chr.everyday-training.*.jsonl` or `strict-training` instruction JSONL for translation model experiments; see `data/README.md`.
-5. **Validation:** Optionally validate `words.seed.json` / `phrases.seed.json` against the JSON schemas in CI or pre-seed.
+5. **Validation:** Optionally validate `data/cherokee/words.seed.json` / `data/cherokee/phrases.seed.json` against the JSON schemas in CI or pre-seed.
 
 ---
 

@@ -6,9 +6,9 @@ This directory contains the sentence-level Cherokee-English corpus and the artif
 
 This project currently keeps Cherokee language data in two different forms:
 
-- `storage/app/private/cherokee/words.seed.json`
+- `data/cherokee/words.seed.json`
   Structured word-level lexicon data with pronunciation, gloss, provenance, and review notes.
-- `storage/app/private/cherokee/phrases.seed.json`
+- `data/cherokee/phrases.seed.json`
   Structured short-phrase data kept separate from words so phrases do not get mixed into the lexicon silently.
 - `data/en-chr.csv`
   Raw sentence-level Cherokee-English parallel corpus used for corpus cleaning and future model training.
@@ -137,7 +137,7 @@ That is why this project keeps both `strict` and `everyday` outputs.
 
 ## Lexicon And Phrase Logic
 
-Sentence-level corpus files in `data/` are not the same thing as the curated seed datasets in `storage/app/private/cherokee/`.
+Sentence-level corpus files in `data/` are not the same thing as the curated seed datasets in `data/cherokee/`.
 
 - Use `words.seed.json` when the unit is a single lexical item.
 - Use `phrases.seed.json` when the unit is a short fixed expression.
@@ -160,5 +160,5 @@ If you are experimenting with training:
 
 If you are expanding learner-facing content:
 
-- add new vocabulary to `storage/app/private/cherokee/words.seed.json`
-- add new expressions to `storage/app/private/cherokee/phrases.seed.json`
+- add new vocabulary to `data/cherokee/words.seed.json`
+- add new expressions to `data/cherokee/phrases.seed.json`

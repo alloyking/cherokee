@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cherokee.local/schemas/words.schema.json",
+  "title": "Cherokee Words Seed Dataset",
+  "description": "Canonical source format for Cherokee vocabulary entries with pronunciation, provenance, and review metadata.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_name",
+    "created_on",
+    "notes",
+    "sources",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^1\\.0$"
+    },
+    "dataset_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "citation"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9._-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "repo",
+            "web",
+            "manual"
+          ]
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "alternate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cherokee",
+        "transliteration",
+        "ipa",
+        "source",
+        "note"
+      ],
+      "properties": {
+        "cherokee": {
+          "type": "string",
+          "minLength": 1
+        },
+        "transliteration": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ipa": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "pattern": "^[a-z0-9._-]+$"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "cherokee",
+        "transliteration",
+        "ipa",
+        "english",
+        "category",
+        "source",
+        "source_note",
+        "confidence",
+        "dialect",
+        "notes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9._-]+$"
+        },
+        "cherokee": {
+          "type": "string",
+          "minLength": 1
+        },
+        "transliteration": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ipa": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "english": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "pattern": "^[a-z0-9._-]+$"
+        },
+        "source_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "needs_review"
+          ]
+        },
+        "dialect": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "alternates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternate"
+          }
+        }
+      }
+    }
+  }
+}

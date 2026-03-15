@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "dataset_name": "Cherokee Phrases Starter Seed",
+  "created_on": "2026-03-11",
+  "notes": [
+    "This file holds short Cherokee phrases separate from the word-level dataset.",
+    "Romanized pronunciations are source-provided learner spellings, not strict phonemic transcriptions.",
+    "IPA is intentionally left null until each phrase has been reviewed against an audio-backed or stronger pronunciation source."
+  ],
+  "sources": [
+    {
+      "id": "shiyo_greetings",
+      "name": "Shiyo Cherokee Language Engine - Greetings",
+      "kind": "web",
+      "citation": "Shiyo greetings phrase detail page",
+      "url": "https://shiyo.org/phrases/greetings/4",
+      "path": null
+    },
+    {
+      "id": "shiyo_greetings_ii",
+      "name": "Shiyo Cherokee Language Engine - Greetings and Salutations II",
+      "kind": "web",
+      "citation": "Shiyo greetings and salutations category page",
+      "url": "https://shiyo.org/greetings-and-salutations--ii?level=2",
+      "path": null
+    },
+    {
+      "id": "ced_dont_cry",
+      "name": "Cherokee English Dictionary - Don't cry sentence",
+      "kind": "web",
+      "citation": "Cherokee English Dictionary share page for ᎠᏠᏱᎭ",
+      "url": "https://www.cherokeedictionary.net/share/72283",
+      "path": null
+    }
+  ],
+  "entries": [
+    {
+      "id": "phrase-hello-are-you-at-peace",
+      "cherokee": "ᏏᏲ ,ᏙᎯᏉᏧ?",
+      "transliteration": "Shi-yo, to-hi-gwo-tsu?",
+      "ipa": null,
+      "english": "Hello, are you at peace?",
+      "category": "greeting.question",
+      "source": "shiyo_greetings",
+      "source_note": "Listed on the Shiyo greetings phrase page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Good starter greeting phrase with both script and pronunciation guidance."
+    },
+    {
+      "id": "phrase-hello-everyone",
+      "cherokee": "ᏏᏲ ᏂᎦᏓ",
+      "transliteration": "Shi-yo ni-ga-da!",
+      "ipa": null,
+      "english": "Hello, everyone!",
+      "category": "greeting.group",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Useful group greeting for announcements or classes."
+    },
+    {
+      "id": "phrase-hello-welcome-everyone",
+      "cherokee": "ᏏᏲ ᏕᏨᏯᏓᏂᎸᎦ",
+      "transliteration": "Shi-yo, ni-ga-da",
+      "ipa": null,
+      "english": "Hello, welcome! (everyone)",
+      "category": "greeting.welcome",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "medium",
+      "dialect": "Eastern source context",
+      "notes": "The English gloss and learner spelling come from the source page; this one should be rechecked later against a more detailed entry."
+    },
+    {
+      "id": "phrase-it-is-good-to-see-you",
+      "cherokee": "ᎣᏏ ᏥᎬᎪᏩᏔ",
+      "transliteration": "O-shi tsi-gv-go-wa-ta.",
+      "ipa": null,
+      "english": "It is good to see you.",
+      "category": "greeting.friendly",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Strong friendly phrase for conversational use."
+    },
+    {
+      "id": "phrase-is-it-morning-now",
+      "cherokee": "ᏃᎢᏍᎪ ᏑᎾᎴᎢ?",
+      "transliteration": "No-isk shu-na-le-i?",
+      "ipa": null,
+      "english": "Is it morning now?",
+      "category": "time.question",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Short time-related question useful for greetings and routine talk."
+    },
+    {
+      "id": "phrase-is-it-night-time",
+      "cherokee": "ᏃᎢᏍᎪ ᏒᏃᏱ?",
+      "transliteration": "No-isk shv-no-yi?",
+      "ipa": null,
+      "english": "Is it night time?",
+      "category": "time.question",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Short time-related question useful for beginner phrase practice."
+    },
+    {
+      "id": "phrase-is-it-noon-time",
+      "cherokee": "ᎢᎦᏍᎪ ᏃᎢ?",
+      "transliteration": "I-gask no-i?",
+      "ipa": null,
+      "english": "Is it noon time?",
+      "category": "time.question",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Time-related question from the same beginner phrase source."
+    },
+    {
+      "id": "phrase-i-will-see-you-later",
+      "cherokee": "ᎣᏂ ᎯᎬᎪᎥᏳ",
+      "transliteration": "O-hni hi-gv-go-v-yu.",
+      "ipa": null,
+      "english": "I will see you later.",
+      "category": "farewell",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Useful farewell phrase with future meaning."
+    },
+    {
+      "id": "phrase-i-will-see-you",
+      "cherokee": "ᎯᎬᎪᎥᏳ.",
+      "transliteration": "Hi-gv-go-v-yu.",
+      "ipa": null,
+      "english": "I will see you.",
+      "category": "farewell",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "A short leave-taking or future-contact phrase."
+    },
+    {
+      "id": "phrase-i-am-leaving-now",
+      "cherokee": "ᏃᏗ ᏛᎨᏏ.",
+      "transliteration": "No-di dv-ge-shi.",
+      "ipa": null,
+      "english": "I am leaving now.",
+      "category": "farewell",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Good practical phrase for ending a conversation."
+    },
+    {
+      "id": "phrase-dont-cry",
+      "cherokee": "ᏞᏍᏗ ᏣᏠᏱᎸᎢ.",
+      "transliteration": "Hlesdi jadlohyilvi.",
+      "ipa": null,
+      "english": "Don't cry.",
+      "category": "everyday.imperative",
+      "source": "ced_dont_cry",
+      "source_note": "Sentence example on the Cherokee English Dictionary share page for ᎠᏠᏱᎭ.",
+      "confidence": "medium",
+      "dialect": null,
+      "notes": "Useful short imperative from a dictionary example sentence rather than a dedicated phrase list."
+    },
+    {
+      "id": "phrase-i-am-going-to-my-home",
+      "cherokee": "ᏗᏇᏅᏒᎢ ᏫᏥᎦᏘ.",
+      "transliteration": "Di-gwe-nv-shv-i wi-tsi-ga-ti.",
+      "ipa": null,
+      "english": "I am going to my home.",
+      "category": "everyday.movement",
+      "source": "shiyo_greetings_ii",
+      "source_note": "Listed on the Shiyo greetings and salutations category page with syllabary and learner spelling.",
+      "confidence": "high",
+      "dialect": "Eastern source context",
+      "notes": "Useful everyday phrase for movement and destination."
+    }
+  ]
+}

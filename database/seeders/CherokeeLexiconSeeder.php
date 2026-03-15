@@ -23,7 +23,7 @@ class CherokeeLexiconSeeder extends Seeder
      */
     protected function seedWords(): void
     {
-        $dataset = $this->readDataset(storage_path('app/private/cherokee/words.seed.json'));
+        $dataset = $this->readDataset(base_path('data/cherokee/words.seed.json'));
         $sources = $this->indexSources($dataset);
         $protectedSeedIds = CherokeeWord::query()
             ->where('is_user_modified', true)
@@ -96,7 +96,7 @@ class CherokeeLexiconSeeder extends Seeder
      */
     protected function seedPhrases(): void
     {
-        $dataset = $this->readDataset(storage_path('app/private/cherokee/phrases.seed.json'));
+        $dataset = $this->readDataset(base_path('data/cherokee/phrases.seed.json'));
         $sources = $this->indexSources($dataset);
         $protectedSeedIds = CherokeePhrase::query()
             ->where('is_user_modified', true)
