@@ -27,6 +27,7 @@ class InitialUsersSeeder extends Seeder
             User::query()->create([
                 'name' => $spec['name'] ?? 'User',
                 'email' => $spec['email'],
+                'is_admin' => true,
                 'password' => $spec['password'],
             ]);
         }
